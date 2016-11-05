@@ -1,9 +1,14 @@
 <?php
-$drawings=80;
-$markers=23;
-$pencils=40;
-$paints=$drawings-$markers-$pencils;
-echo $paints;
+
+$drawings = 80;
+$markers = 23;
+$pencils = 40;
+
+$question = "Дана задача: На школьной выставке {$drawings} рисунков. {$markers} из них выполнены фломастерами, {$pencils} карандашами а остальные — красками. Сколько рисунков, выполненные красками, на школьной выставке?";
+echo $question;
+$paints = $drawings-$markers-$pencils;
+$answer = "Чтобы получить количество рисунков выполненных красками, мы должны вычесть из общего количества рисунков {$drawings}, рисунки маркерами {$markers} и русунки карандашами {$pencils}.  В результате мы получим $drawings - $markers - $pencils = $paints";
+echo $answer;
 /**
  * Про синтаксис я тебе говорил
  * По условию задачи надо было ее описать с помощью языка то есть

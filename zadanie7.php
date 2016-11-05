@@ -1,17 +1,17 @@
 <?php
 for ($i =1 ; $i < 10; $i++){
     for ($j = 1; $j < 10; $j++){
-        $proizv = $i * $j.' ';
+        $composition = $i * $j.' ';
 
         if(($i % 2) == 0){
             if (($j % 2) == 0) {
                 //если $i и $j - чётные
-                echo '[' . $proizv . ']';
+                echo '[' . $composition . ']';
             }
             else
             {
                 //если $i чётное но $j - нет, выводим без скобок.
-                echo $proizv;
+                echo $composition;
             }
         }
         else
@@ -20,12 +20,12 @@ for ($i =1 ; $i < 10; $i++){
             if(($j % 2) == 0)
             {
                 //$j чётное, выводим без скобок
-                echo $proizv;
+                echo $composition;
             }
             else
             {
                 // $j нечётное выводим в круглых
-                echo '('. $proizv .')';
+                echo '('. $composition .')';
             }
         }
     }
