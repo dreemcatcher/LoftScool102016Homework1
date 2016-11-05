@@ -1,5 +1,6 @@
 <?php
-$day=mt_rand(1,10);
+$day = mt_rand(1,10);
+
 switch ($day) {
     case 1;
     case 2;
@@ -10,7 +11,7 @@ switch ($day) {
     break;
     case 6;
     case 7;
-    echo "Это выходной день";
+    echo "Это выходной день";//Зачем двойные кавычки?
     break;
     default;
     echo "Неизвестный день";
